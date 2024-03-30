@@ -3,5 +3,9 @@ go 1.22
 use (
 	// Applications
 	//
-	cmd/server
+	cmd/backbone
+
+	// Internal packages
+	//
+	internal/logging
 )
