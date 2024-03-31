@@ -1,0 +1,13 @@
+{
+  "environment": "development",
+  "endpoints": [
+    {
+      "name": "backbone",
+      "port": 8081,
+      "tls_cert": {
+        "cert": "config/ssl/server.crt",
+        "key": "config/ssl/server.key"
+      }
+    }
+  ]
+}
