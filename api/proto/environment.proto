@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package atmosphere.environment.v1;
+
+option go_package = "internal/environment/buffers;environment";
+
+import "api/proto/endpoints.proto";
+
+message Environment {
+  string name = 1;
+  repeated Endpoint endpoints = 2;
+}
+

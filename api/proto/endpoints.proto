@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package atmosphere.environment.v1;
+
+option go_package = "internal/environment/buffers;environment";
+
+import "api/proto/tls.proto";
+
+message Endpoint {
+  string name = 1;
+  bool public = 2;
+  int32 port = 3;
+  TlsConfiguration tls = 4;
+}

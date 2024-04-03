@@ -1,12 +1,13 @@
 {
-  "environment": "development",
+  "name": "development",
   "endpoints": [
     {
       "name": "backbone",
+      "public": true,
       "port": 8081,
-      "tls_cert": {
-        "cert": "config/ssl/server.crt",
-        "key": "config/ssl/server.key"
+      "tls": {
+        "cert_file": "/etc/letsencrypt/live/development.example.com/fullchain.pem",
+        "key_file": "/etc/letsencrypt/live/development.example.com/privkey.pem"
       }
     }
   ]

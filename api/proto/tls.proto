@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package atmosphere.environment.v1;
+
+option go_package = "internal/environment/buffers;environment";
+
+message TlsConfiguration {
+  string cert_file = 1;
+  string key_file = 2;
+}
